@@ -1,0 +1,45 @@
+start
+   Declarations
+      num battingAverage
+      string promptJersey = "Please enter the jersey number."
+      num hitNumber
+      num jerseyNumber
+      num atBats
+      string promptHits = "Please enter the players hits."
+      string promptBats = "Please enter the players at bats."
+      string displayEnd = "End of job"
+      string excellentHitter = "excellent hitter"
+   housekeeping()
+      while jerseyNumber != 0 
+         calculatebattingaverage()
+	 housekeeping()
+      endwhile
+   endofjob()
+stop	
+   //Collects inputs and prompts users.
+   housekeeping()	
+      output promptJersey
+      input jerseyNumber
+      output promptHits
+      input hitNumber
+      output promptBats
+      input atBats
+   return
+   //Calculates batting average, compares batting average to if/else statement and outputs results.
+   calculatebattingaverage()
+      set battingAverage = hitNumber / atBats
+      if battingAverage is > .400 then
+         output excellentHitter
+         output jerseyNumber
+         output battingAverage
+         output atBats
+         output hitNumber
+      else 
+         output jerseyNumber
+         output battingAverage
+      endif
+   return
+   //Wraps everything up.
+   endofjob()
+      output displayEnd
+   return
