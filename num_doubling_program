@@ -1,0 +1,10 @@
+start
+  Declarations
+    num myAnswer
+    num userNumber
+    string userPrompt = "Please enter the number you'd like doubled"
+  output userPrompt
+  input userNumber
+  myAnswer = userNumber * 2
+  output myAnswer
+stop
