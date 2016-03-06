@@ -1,0 +1,50 @@
+start
+   Declarations
+      string userPrompt = "Please enter a positive integer"
+      num minNumber
+      num maxNumber
+      string displayEnd = "End of job"
+      num userInteger
+      houseKeeping()
+      compareHighestLowest()
+      endOfJob()
+   houseKeeping()
+      output userPrompt
+      input userInteger
+   return
+   while userInteger > 0
+      compareHighestLowest()
+         if minNumber > userInteger then
+            set minNumber = userInteger 
+         endif
+         if maxnumber < userInteger then
+            set maxNumber = userInteger
+         endif
+      return
+      output minNumber
+      output maxNumber
+      houseKeeping()
+   endwhile
+   endOfJob()
+      displayEnd
+   return
+stop
+
+   //This module prompts the user for an integer and inputs the users integer to variable userInteger
+   houseKeeping()
+      output userPrompt
+      input userInteger
+   return
+   //This module compares the userInteger variable with minNumber and maxNumber and replaces one or the other if it is higher than maxNumber or lower than minNumber
+   compareHighestLowest()
+         if minNumber > userInteger then
+            set minNumber = userInteger 
+         endif
+         if maxnumber < userInteger then
+            set maxNumber = userInteger
+         endif
+      return
+   //This module wraps everything up and displays 'End of job"
+   endOfJob()
+      displayEnd
+   return
